@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshsales Session Knowledge</title>
+    <link rel="stylesheet" type="text/css" href="libs/json-view.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h3>Freshsales CRM</h3>
+    <input type="text" id="search" placeholder="Search with field name or value">
+    <div class="accordian-wrapper">
+      <details>
+        <summary>
+          Account Information
+        </summary>
+        <div id="account-information">
+          <div class="content"></div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          User Information
+        </summary>
+        <div id="user-information">
+          <div class="content"></div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          Raw Data
+        </summary>
+        <div id="raw-data">
+          <div class="raw-data-placeholder"></div>
+        </div>
+      </details>
+    </div>
+    <script type="text/javascript" src="libs/json-view.js"></script>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
