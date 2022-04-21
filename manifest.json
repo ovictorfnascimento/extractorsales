@@ -1,0 +1,22 @@
+{
+    "name": "Extractor Sales",
+    "description": "Extrai informações da conta freshsales aberta no navegador",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "background": {
+      "persistent": false,
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content-script.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "page_action": {
+      "default_title": "Obtém a conta e detalhes do usuário aberto",
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "storage"]
+  }
